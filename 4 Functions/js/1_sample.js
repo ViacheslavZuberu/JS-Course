@@ -1,3 +1,12 @@
+function printNumbers(max) {
+    for (let a = 1; a <= max; i++) {
+        document.write(a + " ");
+    }
+    document.write("<br>");
+}
+
+printNumbers(10);
+
 function printHello(name) {
     if (name === undefined) {
         return;
