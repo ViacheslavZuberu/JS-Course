@@ -1,5 +1,5 @@
 function printNumbers(max) {
-    for (let a = 1; a <= max; i++) {
+    for (let a = 1; a <= max; a++) {
         document.write(a + " ");
     }
     document.write("<br>");
