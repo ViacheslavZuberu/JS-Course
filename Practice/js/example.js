@@ -12,7 +12,6 @@ if (age >= 70) {
 
 console.log("Дорогой друг!");
 
-
 var name = prompt("Enter your name!");
 
 switch(name) {
