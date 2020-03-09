@@ -3,8 +3,10 @@ function invDigits(k) {
 
     while (k >= 1) {
         let lastDigit = k % 10;
+        
         k -= lastDigit;
         k /= 10;
+
         result *= 10;
         result += lastDigit;
     }
