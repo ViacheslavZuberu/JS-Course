@@ -1,0 +1,88 @@
+Объекты (Objects)
+=================
+
+1. Что такое объект?
+2. Что такое объект в JavaScript?
+- Набор пар "ключ-значение"
+
+let person = {
+    name: "Tom",
+    surname: "Smith",
+    age: 22,
+
+    sayHi: function() {
+        console.log("Hello!");
+    }
+};
+
+- Одна пара "ключ-значение" = "свойство объекта"
+- Свойство, которое яв-ся функцией = "метод"
+
+let personSecond = {
+    name: "Tom",
+    surname: "Smith",
+    age: 22,
+
+    sayHi: function() {
+        console.log("Hello!");
+    }
+};
+
+3. Типы данных (вспоминаем)
+
+- Примимтивные
+-- number
+-- string
+-- boolean
+-- undefined
+-- null
+-- symbol (еще НЕ смотрели)
+-- big int (еще НЕ смотрели)
+
+- Составные (Объектные)
+
+4. Способы создания объекта
+
+4.1 Объектный литерал
+
+let noteBook = {
+    pageCount: 48,
+    type: "#",
+    width: 10,
+    height: 18,
+
+    open: function() {
+        console.log("The notebook is opened!");
+    }
+};
+
+4.2 Функция-конструктор
+
+function NoteBook(pageCount, type, width, height) {
+    // this = {}
+    this.pageCount = pageCount;
+    this.type = type;
+    this.width = width;
+    this.height = height;
+    // return this
+}
+
+---
+4.3 С помощью Object.create()
+4.4 С использованием классов
+
+5 Работа с объектами
+
+При обращении к несуществующим свойствам, JS их создает
+
+let dog = {
+    name: "Tayson",
+    age: 8
+};
+
+dog.age = 18;
+dog.breed = "Bulldog";
+
+console.log(dog);
+
+5.1 Оператор in
